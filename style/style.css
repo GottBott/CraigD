@@ -7,20 +7,16 @@ body {
     margin: 0;
 }
 
+.nav-link{
+    font-size: 20px;
+    margin-right: 10px
 
+}
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
     color:white !important;
     font-weight: bolder
 }
-/* .navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-.navbar-default .navbar-collapse {
-    border-color: transparent;
-    font-size: 1vw;
-} */
-
 
 .craig-banner {
     position: fixed;
@@ -52,6 +48,8 @@ body {
 
 .bg-inverse {
     background-color: #222022 !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 .navbar-toggleable-md .navbar-collapse {
     width: 50%;
@@ -65,6 +63,8 @@ body {
 
 .navbar-brand{
     padding-left: calc((100% - 948px)/2);
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .footer {
@@ -77,7 +77,7 @@ body {
   }
 
   .social-bar{
-    margin-left: calc((100% - 948px)/4);
+    margin-left: calc((100% - 948px)/5);
     margin-bottom: 15px;
     position: fixed;
   }
@@ -111,6 +111,6 @@ body {
 @media only screen and (max-height: 400px) {
       .craig-banner img {
         max-width: 150px;
-        /* left: 250px !important; */
       }
+     
 }

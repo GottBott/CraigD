@@ -3,9 +3,36 @@
 
 
 function init(){
-
-    
    
+    bGImage()
+    navBar()
+    toggleBtn()
+ 
+}
+
+// Handel active link switching and loading the right active nav-item
+function navBar(){
+
+    let loc = location.hash;
+    $(".navItems").find(".active").removeClass("active");
+    $('.navItems .nav-link').each(function(){
+        var $this = $(this);
+        if($this.attr('href').indexOf(loc) !== -1){
+            $this.addClass('active');
+        }
+    })
+
+    $(".navItems .nav-link").on("click", function(){
+        $(".navItems").find(".active").removeClass("active");
+        $(this).addClass("active");
+     });
+
+}
+
+// set the correct bg image based on screen size
+// Put the banner in the correct place
+function bGImage(){
+
     let docHeight = $(window).height()
     let docWidth = $(window).width()
     $(".bg").css("height",docHeight)
@@ -29,27 +56,22 @@ function init(){
     }
     $(".craig-banner").css("right", right + 20 + "px")
     $(".craig-banner").css("top", navHeight + 20 + "px")
-  
-    let loc = location.hash;
-    $(".navItems").find(".active").removeClass("active");
-    $('.navItems .nav-link').each(function(){
-        var $this = $(this);
-        if($this.attr('href').indexOf(loc) !== -1){
-            $this.addClass('active');
-        }
-    })
-
-    $(".navItems .nav-link").on("click", function(){
-        $(".navItems").find(".active").removeClass("active");
-        $(this).addClass("active");
-     });
-     
-    
-    
-   
-   
 
 }
+
+function toggleBtn(){
+    let docHeight = $(window).height()
+    let docWidth = $(window).width()
+
+    let navHeight = $(".navbar").outerHeight();
+    let toggleBtnHeight = $(".navbar-toggler").outerHeight()
+    let mTop = 0
+    if(navHeight > toggleBtnHeight){
+        mTop += 0.5 * (navHeight - toggleBtnHeight)
+    }
+    $(".navbar-toggler").css("margin-top", mTop + "px");
+}
+
 
 
 $(window).resize(function() {
