@@ -4,40 +4,30 @@ body {
     background-color:#222022;
     height: 100%;
     overflow-y: hidden;
-}
-.starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
+    margin: 0;
 }
 
 
-.mainBGImage{
-    margin: auto;
-    display: block;
-    width: 100%;
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color:white !important;
+    font-weight: bolder
 }
+/* .navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+    font-size: 1vw;
+} */
 
-.craig-banner img {
+
+.craig-banner {
     position: fixed;
-    right: 0px;
-    top: 100px;
-    max-width: 42%;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
 }
-
 .craig-name{
     font-size: calc(20px + 2vw);
     margin-left: 10px;
-}
-.main-image-div{
-    max-width: 948px;
-    margin: auto;
-}
-
-.mainBGImage-Div {
-    margin-top: 30px;
-    width: 100%;
 }
 
 .nav-bar-center{
@@ -59,6 +49,7 @@ body {
     padding-right: 0px;
     padding-left: 0px;
 }
+
 .bg-inverse {
     background-color: #222022 !important;
 }
@@ -94,12 +85,32 @@ body {
     width: 58px;
     height: 58px;
     margin: 10px;
+    border-radius: 10px;
 
 }
+.bg {
+    max-width: 1000px;
+    margin: auto;
+    background-image: url("../assets/home_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .social-bar{
-        margin-left: 25px;
+        margin-left: auto;
 
+      }
+      .craig-banner img {
+        max-width: 175px;
+        /* left: 250px !important; */
+      }
+}
+
+@media only screen and (max-height: 400px) {
+      .craig-banner img {
+        max-width: 150px;
+        /* left: 250px !important; */
       }
 }

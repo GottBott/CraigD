@@ -3,31 +3,49 @@
 
 
 function init(){
+
+    
    
     let docHeight = $(window).height()
     let docWidth = $(window).width()
-   
-    let navHeight = $("nav").height() + 5;
-    $(".craig-banner img").css("top", navHeight + "px");
+    $(".bg").css("height",docHeight)
+
+    let navHeight = $(".navbar").outerHeight();
 
 
-
-    let bgImageDiv = $(".mainBGImage-Div")
-    let imgSrc="assets/home_background.jpg"
+    let imgSrc = "url(../CraigDemo/assets/home_background_mobile.jpg)"
     if(docHeight > docWidth){
-        imgSrc="assets/home_background_mobile.jpg"
+        $(".bg").css("background-image", imgSrc);
     }
+    else{
+        imgSrc = "url(../CraigDemo/assets/home_background.jpg)"
+        $(".bg").css("background-image", imgSrc);
+    }
+    $(".bg").css("margin-top", -30 + "px");
 
-    $("#mainBGImage").on('load', function() {
-        let bgImageHeight = this.height
-        let calcHeight = (docHeight - bgImageHeight)
-        if (calcHeight < 0){
-            $(".mainBGImage-Div").css("margin-top", calcHeight + "px");
+    let right = 0
+    if(docWidth > $(".bg").width() ){
+        right += 0.5 * (docWidth - $(".bg").width())
+    }
+    $(".craig-banner").css("right", right + 20 + "px")
+    $(".craig-banner").css("top", navHeight + 20 + "px")
+  
+    let loc = location.hash;
+    $(".navItems").find(".active").removeClass("active");
+    $('.navItems .nav-link').each(function(){
+        var $this = $(this);
+        if($this.attr('href').indexOf(loc) !== -1){
+            $this.addClass('active');
         }
-        else{
-             $(".mainBGImage-Div").css("margin-top","30px");
-        }
-      }).attr('src', imgSrc);
+    })
+
+    $(".navItems .nav-link").on("click", function(){
+        $(".navItems").find(".active").removeClass("active");
+        $(this).addClass("active");
+     });
+     
+    
+    
    
    
 
