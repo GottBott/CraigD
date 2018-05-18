@@ -3,7 +3,7 @@ body {
     padding-top: 2rem;
     background-color:#222022;
     height: 100%;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     margin: 0;
 }
 
@@ -19,7 +19,10 @@ body {
 }
 
 .craig-banner {
-    position: fixed;
+    /* position: fixed; */
+}
+.craig-banner img{
+    border-radius: 25px;
 }
 .craig-name{
     font-size: calc(20px + 2vw);

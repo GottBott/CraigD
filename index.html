@@ -14,8 +14,8 @@
     <link href="style/style.css" rel="stylesheet" type="text/css">s
 </head>
 
-<body>
-    <div class="bg"></div>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+     <div class="bg"></div>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,29 +28,38 @@
         <div class=" collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navItems navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link active" href="#/home">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#/portraits">Portraits</a>
+                    <a class="nav-link" href="#portraits">Portraits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#/about">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#/shop">Media</a>
+                    <a class="nav-link" href="#media">Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#/contact">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
+    <div>
         <div class="craig-banner">
             <img src="assets/banner.jpg"></img>
         </div>
     </div>
+    <div id="portraits" class="container-fluid" style="height:500px;">
+           <img src="https://api.instagram.com/oembed/?url=http://instagr.am/p/fA9uwTtkSN/" alt=""> 
+    </div>
+    <div id="about" class="container-fluid" style="height:500px;"></div>
+    <div id="media" class="container-fluid" style="height:500px;">
+            <div id="instafeed"></div>
+    </div>
+    <div id="contact" class="container-fluid" style="height:500px;"></div>
+
 
     <footer class="footer">
         <div class="container">
@@ -73,13 +82,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="src/bootstrap.min.js"></script>
     <script src="src/home.js"></script>
+    <script type="text/javascript" src="src/instafeed.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="src/ie10-viewport-bug-workaround.js"></script>
 </body>
