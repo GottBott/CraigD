@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="assets/img/logo/favicon.ico">
 
     <title>Craig ​DeMartino</title>
 
@@ -14,27 +14,27 @@
     <link href="style/style.css" rel="stylesheet" type="text/css">s
 </head>
 
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
-     <div class="bg"></div>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top ">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#/home">
-            <div class="craig-name">Craig ​DeMartino </div>
-        </a>
-
-        <div class=" collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navItems navbar-nav mr-auto">
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#/home">
+                <div class="craig-name">Craig ​DeMartino </div>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
                     <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portraits">Portraits</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#photos">Photos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#media">Media</a>
@@ -46,51 +46,105 @@
         </div>
     </nav>
 
-    <div>
-        <div class="craig-banner">
-            <img src="assets/banner.jpg"></img>
-        </div>
-    </div>
-    <div id="portraits" class="container-fluid" style="height:500px;">
-           <img src="https://api.instagram.com/oembed/?url=http://instagr.am/p/fA9uwTtkSN/" alt=""> 
-    </div>
-    <div id="about" class="container-fluid" style="height:500px;"></div>
-    <div id="media" class="container-fluid" style="height:500px;">
-            <div id="instafeed"></div>
-    </div>
-    <div id="contact" class="container-fluid" style="height:500px;"></div>
+    <div id="home">
+        <div class="slideshow-container">
 
-
-    <footer class="footer">
-        <div class="container">
-            <div class="social-bar">
-                <a href="https://www.facebook.com/craig.demartino">
-                    <img src="assets/fb_logo.png"></img>
-                </a>
-                <a href="https://www.instagram.com/craigdem/">
-                    <img src="assets/insta_logo.png"></img>
-                </a>
-                <a href="https://twitter.com/demartinoclimb">
-                    <img src="assets/Twitter_logo.png"></img>
-                </a>
-
+            <div class="mySlides fade bg" style="background-image:url('assets/img/craig_large1.jpg');">
+                <div class="craig-banner">
+                    <img src="assets/img/banner.jpg"></img>
+                </div>
             </div>
 
-        </div>
-    </footer>
+            <div class="mySlides fade bg" style="background-image:url('assets/img/craig_large4.jpg');">
+                <div class="craig-banner">
+                    <img src="assets/img/banner.jpg"></img>
+                </div>
+            </div>
 
-    <!-- Bootstrap core JavaScript
+            <div class="mySlides fade bg" style="background-image:url('assets/img/craig_large5.jpg');">
+                <div class="craig-banner">
+                    <img src="assets/img/banner.jpg"></img>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusTitleSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusTitleSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+        <div class="dots">
+            <span class="dot" onclick="currentTitleSlide(1)"></span>
+            <span class="dot" onclick="currentTitleSlide(2)"></span>
+            <span class="dot" onclick="currentTitleSlide(3)"></span>
+        </div>
+    </div>
+    <div id="about" class="container-fluid section">
+        <div class="sectionTitle"></div>
+        <div class="row"></div>
+    </div>
+    <div id="photos" class="container-fluid section">
+        <div class="sectionTitle"> Photos</div>
+        <div class="photoCenter">
+            <div id="thumbnailFeed"></div>
+
+            <div id="fullInstaSlideShowModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div id="fullInstaSlideShow"></div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusInstaSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusInstaSlides(1)">&#10095;</a>
+
+                    <!-- The dots/circles -->
+                    <div class="instaDotCase">
+                        <div id="instaDots" class="instaDots"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="media" class="container-fluid section" style="height:500px;">
+                <div class="sectionTitle"> Media</div>
+            </div>
+            <div id="contact" class="container-fluid section" style="height:500px;">
+                <div class="sectionTitle"> Contact</div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="social-bar">
+                    <a href="https://www.facebook.com/craig.demartino">
+                        <img src="assets/img/logo/fb_logo.png"></img>
+                    </a>
+                    <a href="https://www.instagram.com/craigdem/">
+                        <img src="assets/img/logo/insta_logo.png"></img>
+                    </a>
+                    <a href="https://twitter.com/demartinoclimb">
+                        <img src="assets/img/logo/Twitter_logo.png"></img>
+                    </a>
+
+                </div>
+
+            </footer>
+
+            <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="src/bootstrap.min.js"></script>
-    <script src="src/home.js"></script>
-    <script type="text/javascript" src="src/instafeed.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="src/ie10-viewport-bug-workaround.js"></script>
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+                crossorigin="anonymous"></script>
+            <script src="src/third_party/bootstrap.min.js"></script>
+            <script src="src/home.js"></script>
+            <script type="text/javascript" src="src/third_party/instafeed.min.js"></script>
+            <script type="text/javascript" src="src/slideshow.js"></script>
+            <script type="text/javascript" src="src/about.js"></script>
+            <script type="text/javascript" src="src/photo.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="src/third_party/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
