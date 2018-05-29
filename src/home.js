@@ -42,8 +42,10 @@ function toggleBtn(docWidth,docHeight){
 }
 
 function centerInsta(docWidth,docHeight){
-    let width = $("#instadeed img").first().width() || 150;
-    $(".photoCenter").css("width", parseInt(docWidth/width) * 150 + "px");
+    let pWidth = $("#photos").width() +20;
+    let width = 160;
+    $(".photoCenter").css("width", (parseInt(pWidth/width) * 160) +"px");
+    $(".photoCenter").css("margin", "auto");
 
 }
 

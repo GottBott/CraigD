@@ -181,9 +181,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* #instafeed img{
-    text-align: center;
-} */
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -193,36 +190,6 @@ body {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-
-
-}
-
-@media only screen and (max-width: 600px) {
-    .social-bar{
-        margin-left: auto;
-      }
-      .craig-banner img {
-        max-width: 175px;
-        margin-top: 20px;
-      }
-      .dots{
-        text-align: right;
-        margin-top: -80px;
-        margin-right: 25px;
-      }
-}
-
-@media only screen and (max-height: 400px) {
-      .craig-banner img {
-        max-width: 150px;
-        margin-top: 20px;
-      }
-     
 }
 
 
@@ -257,7 +224,6 @@ body {
   .close {
     color: white;
     position: absolute;
-    top: 55px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
@@ -312,3 +278,44 @@ body.modal-open {
 .numbertext{
     color:  white;
 }
+
+.sponsors{
+    margin: 10px;
+}
+
+.sponsor{
+    /* height: 114px; */
+    background-color: white;
+    margin-top: 15px;
+}
+
+.sponsor img{
+    max-width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+.bgWhite{
+    background-color: white;
+    margin: 5px;
+}
+
+.sponsors label {
+    color: white;
+}
+.sponsors .row{
+    text-align: center;
+}
+
+.sponsors iframe{
+    width:  100%;
+}
+.thumbSlide{
+    cursor: pointer;
+}
+.thumbSlide img{
+    margin: 5px;
+}
+/* 
+#thumbnailFeed{
+    text-align: center;
+} */

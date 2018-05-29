@@ -11,7 +11,8 @@
     <title>Craig ​DeMartino</title>
 
     <link href="style/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="style/style.css" rel="stylesheet" type="text/css">s
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/style-mobile.css" rel="stylesheet" type="text/css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -49,19 +50,25 @@
     <div id="home">
         <div class="slideshow-container">
 
-            <div class="mySlides fade bg" style="background-image:url('assets/img/craig_large1.jpg');">
+            <div class="mySlides fade bg bg1" style="background-image:url('assets/img/craig_large1.jpg');">
                 <div class="craig-banner">
                     <img src="assets/img/banner.jpg"></img>
                 </div>
             </div>
 
-            <div class="mySlides fade bg" style="background-image:url('assets/img/craig_large4.jpg');">
+            <div class="mySlides fade bg bg2" style="background-image:url('assets/img/craig_large4.jpg');">
                 <div class="craig-banner">
                     <img src="assets/img/banner.jpg"></img>
                 </div>
             </div>
 
-            <div class="mySlides fade bg" style="background-image:url('assets/img/craig_large5.jpg');">
+            <div class="mySlides fade bg bg3" style="background-image:url('assets/img/craig_large5.jpg')">
+                <div class="craig-banner">
+                    <img src="assets/img/banner.jpg"></img>
+                </div>
+            </div>
+
+            <div class="mySlides fade bg bg4" style="background-image:url('assets/img/headshot.png'); background-color: black;">
                 <div class="craig-banner">
                     <img src="assets/img/banner.jpg"></img>
                 </div>
@@ -76,6 +83,7 @@
             <span class="dot" onclick="currentTitleSlide(1)"></span>
             <span class="dot" onclick="currentTitleSlide(2)"></span>
             <span class="dot" onclick="currentTitleSlide(3)"></span>
+            <span class="dot" onclick="currentTitleSlide(4)"></span>
         </div>
     </div>
     <div id="about" class="container-fluid section">
@@ -106,8 +114,63 @@
             </div>
 
 
-            <div id="media" class="container-fluid section" style="height:500px;">
+            <div id="media" class="container-fluid section">
                 <div class="sectionTitle"> Media</div>
+
+                <div class="container">
+                    <div class="sponsors">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                    webkitallowfullscreen="webkitallowfullscreen" src="http://player.vimeo.com/video/51767176"></iframe>
+                                <label>Gimp Monkeys</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                    webkitallowfullscreen="webkitallowfullscreen" src="http://player.vimeo.com/video/254133852"></iframe>
+                                <label>Craig's Reaction</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm bgWhite">
+                                <div class="sponsor">
+                                    <a href="https://arcteryx.com/home.aspx?country=ca&language=en">
+                                        <img src="assets/img/logo/sponsor/arcteryx.png"></img>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm bgWhite">
+                                <div class="sponsor">
+                                    <a href="http://www.blackdiamondequipment.com/en_US/homepage">
+                                        <img src="assets/img/logo/sponsor/black-diamond.gif"></img>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm bgWhite">
+                                <div class="sponsor">
+                                    <a href="https://www.bluewaterropes.com/">
+                                        <img src="assets/img/logo/sponsor/bluewater.png"></img>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm bgWhite">
+                                <div class="sponsor">
+                                    <a href="https://evolvsports.com/">
+                                        <img src="assets/img/logo/sponsor/evolv.png"></img>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm bgWhite">
+                                <div class="sponsor">
+                                    <a href="https://frictionlabs.com/">
+                                        <img src="assets/img/logo/sponsor/friction-labs.png"></img>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div id="contact" class="container-fluid section" style="height:500px;">
                 <div class="sectionTitle"> Contact</div>
@@ -117,13 +180,13 @@
             <footer class="footer">
                 <div class="social-bar">
                     <a href="https://www.facebook.com/craig.demartino">
-                        <img src="assets/img/logo/fb_logo.png"></img>
+                        <img src="assets/img/logo/socal/fb_logo.png"></img>
                     </a>
                     <a href="https://www.instagram.com/craigdem/">
-                        <img src="assets/img/logo/insta_logo.png"></img>
+                        <img src="assets/img/logo/socal/insta_logo.png"></img>
                     </a>
                     <a href="https://twitter.com/demartinoclimb">
-                        <img src="assets/img/logo/Twitter_logo.png"></img>
+                        <img src="assets/img/logo/socal/Twitter_logo.png"></img>
                     </a>
 
                 </div>

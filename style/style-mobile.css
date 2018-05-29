@@ -1,0 +1,60 @@
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .social-bar{
+          margin-left: auto;
+        }
+        .craig-banner img {
+          max-width: 175px;
+          margin-top: 20px;
+        }
+        .dots{
+          text-align: right;
+          margin-top: -80px;
+          margin-right: 25px;
+        }
+  
+        .mySlides{
+          background-position: 60% bottom;
+        }
+        .bg3{
+          background-position: 65% bottom !important;
+        }
+        .close{
+            top: 55px;
+        }
+        .prev, .next {
+            top: 20%;
+        }
+  }
+  
+  @media only screen and (max-height: 400px) {
+        .craig-banner img {
+          max-width: 150px;
+          margin-top: 20px;
+        }
+  
+        .bg1{
+          background-position: center 25%;
+        }
+        .bg2{
+          background-position: center 66%;
+        }
+        .bg3{
+          background-position: center 25%;
+        }
+        .bg4{
+          background-position: center 66%;
+        }
+        .close{
+            top: 55px;
+        }
+       
+  }
+  

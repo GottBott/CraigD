@@ -24,11 +24,6 @@ let fullTemplate = `<div class="instaSlide fade">
 
 function instaFeed(){
     let thumbOptions = jQuery.extend({}, options)
-    thumbOptions.after = function() {
-        let w = $(window).width()
-        let h = $(window).height()
-        centerInsta(w,h);
-    }
     thumbOptions.target = 'thumbnailFeed'
     thumbOptions.template = thumbTemplate
     thumbOptions.after = function(){ numberSlides()} 
@@ -47,6 +42,11 @@ function instaFeed(){
 
 
 function numberSlides(){
+
+    let w = $(window).width()
+    let h = $(window).height()
+    centerInsta(w,h);
+
     $(".thumbSlide").each(function( index ) {
         $(this).click(function(){
             openModal();
@@ -121,6 +121,10 @@ function showInstaSlides(n) {
 function openModal() {
     document.getElementById('fullInstaSlideShowModal').style.display = "block";
     $("body").addClass("modal-open");
+    location.hash = "#photos";
+    let y = $(window).scrollTop();
+    $(window).scrollTop(y-100);
+
   }
   
   function closeModal() {
