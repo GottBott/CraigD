@@ -129,6 +129,7 @@ function showInstaSlides(n) {
 function openModal() {
     document.getElementById('fullInstaSlideShowModal').style.display = "block";
     $(".wrapper").addClass("modal-open");
+    setTimeout(function(){ $(".nav-link").removeClass("active") }, 100);
 
   }
   
