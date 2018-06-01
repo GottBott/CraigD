@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="assets/img/logo/favicon.ico">
@@ -16,193 +17,174 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top ">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#/home">
-                <div class="craig-name">Craig ​DeMartino </div>
-            </a>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#photos">Photos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#media">Media</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="home">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade bg bg1" style="background-image:url('assets/img/craig_large1.jpg');">
-                <div class="craig-banner">
-                    <img src="assets/img/banner.jpg"></img>
-                </div>
+    <div class="wrapper">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top ">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#/home">
+                    <div class="craig-name">Craig ​DeMartino </div>
+                </a>
             </div>
-
-            <div class="mySlides fade bg bg2" style="background-image:url('assets/img/craig_large2.jpg');">
-                <div class="craig-banner">
-                    <img src="assets/img/banner.jpg"></img>
-                </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
 
-            <div class="mySlides fade bg bg3" style="background-image:url('assets/img/craig_large3.jpg')">
-                <div class="craig-banner">
-                    <img src="assets/img/banner.jpg"></img>
-                </div>
-            </div>
+        <div id="home">
+            <div class="slideshow-container">
 
-            <div class="mySlides fade bg bg4" style="background-image:url('assets/img/headshot.png'); background-color: black;">
-                <div class="craig-banner">
-                    <img src="assets/img/banner.jpg"></img>
-                </div>
-            </div>
-
-            <a class="prev" onclick="plusTitleSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusTitleSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-        <div class="dots">
-            <span class="dot" onclick="currentTitleSlide(1)"></span>
-            <span class="dot" onclick="currentTitleSlide(2)"></span>
-            <span class="dot" onclick="currentTitleSlide(3)"></span>
-            <span class="dot" onclick="currentTitleSlide(4)"></span>
-        </div>
-    </div>
-    <div id="about" class="container-fluid section">
-        <div class="sectionTitle"></div>
-        <div class="row"></div>
-    </div>
-    <div id="photos" class="container-fluid section">
-        <div class="sectionTitle"> Photos</div>
-        <div class="photoCenter">
-            <div id="thumbnailFeed"></div>
-
-            <div id="fullInstaSlideShowModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-
-                    <div id="fullInstaSlideShow"></div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusInstaSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusInstaSlides(1)">&#10095;</a>
-
-                    <!-- The dots/circles -->
-                    <div class="instaDotCase">
-                        <div id="instaDots" class="instaDots"></div>
+                <div class="mySlides fade bg bg1" style="background-image:url('assets/img/craig_large1.jpg');">
+                    <div class="craig-banner">
+                        <img src="assets/img/banner.jpg"></img>
                     </div>
+                </div>
 
+                <div class="mySlides fade bg bg2" style="background-image:url('assets/img/craig_large2.jpg');">
+                    <div class="craig-banner">
+                        <img src="assets/img/banner.jpg"></img>
+                    </div>
+                </div>
+
+                <div class="mySlides fade bg bg3" style="background-image:url('assets/img/craig_large3.jpg')">
+                    <div class="craig-banner">
+                        <img src="assets/img/banner.jpg"></img>
+                    </div>
+                </div>
+
+                <div class="mySlides fade bg bg4" style="background-image:url('assets/img/headshot.png'); background-color: black;">
+                    <div class="craig-banner">
+                        <img src="assets/img/banner.jpg"></img>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusTitleSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusTitleSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+            <div class="dots">
+                <span class="dot" onclick="currentTitleSlide(1)"></span>
+                <span class="dot" onclick="currentTitleSlide(2)"></span>
+                <span class="dot" onclick="currentTitleSlide(3)"></span>
+                <span class="dot" onclick="currentTitleSlide(4)"></span>
+            </div>
+        </div>
+        <div id="about" class="container-fluid section">
+            <div class="sectionTitle"></div>
+            <div class="row"></div>
+        </div>
+        <div id="photos" class="container-fluid section">
+            <div class="sectionTitle"> Photos</div>
+            <div class="photoCenter">
+                <div id="thumbnailFeed"></div>
+
+                <div id="fullInstaSlideShowModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div id="fullInstaSlideShow"></div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusInstaSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusInstaSlides(1)">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="instaDotCase">
+                            <div id="instaDots" class="instaDots"></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </div>
 
 
-            <div id="media" class="container-fluid section">
-                <div class="sectionTitle"> Media</div>
+        <div id="media" class="container-fluid section">
+            <div class="sectionTitle"> Media</div>
 
-                <div class="container">
-                    <div class="sponsors">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a href="https://www.amazon.com/After-Fall-Climbers-Facing-Finding/dp/0825442656" class="afterFall">
-                                    <img src="assets/img/ATF-book.jpg"></img>
+            <div class="container">
+                <div class="sponsors">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="https://www.amazon.com/After-Fall-Climbers-Facing-Finding/dp/0825442656" class="afterFall">
+                                <img src="assets/img/ATF-book.jpg"></img>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                webkitallowfullscreen="webkitallowfullscreen" src="http://player.vimeo.com/video/51767176"></iframe>
+                            <label>Gimp Monkeys</label>
+
+                            <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                webkitallowfullscreen="webkitallowfullscreen" src="http://player.vimeo.com/video/254133852"></iframe>
+                            <label>Craig's Reaction</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm sponsorLogoBG">
+                            <div class="sponsor">
+                                <a href="https://arcteryx.com/home.aspx?country=ca&language=en">
+                                    <img style='padding: 0px;' src="assets/img/logo/sponsor/arcteryx.png"></img>
                                 </a>
                             </div>
-                            <div class="col-sm-6">
-                                <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
-                                    webkitallowfullscreen="webkitallowfullscreen" src="http://player.vimeo.com/video/51767176"></iframe>
-                                <label>Gimp Monkeys</label>
-
-                                <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
-                                    webkitallowfullscreen="webkitallowfullscreen" src="http://player.vimeo.com/video/254133852"></iframe>
-                                <label>Craig's Reaction</label>
+                        </div>
+                        <div class="col-sm sponsorLogoBG">
+                            <div class="sponsor">
+                                <a href="http://www.blackdiamondequipment.com/en_US/homepage">
+                                    <img style='padding: 0px;' src="assets/img/logo/sponsor/black-diamond.png"></img>
+                                </a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm sponsorLogoBG">
-                                <div class="sponsor">
-                                    <a href="https://arcteryx.com/home.aspx?country=ca&language=en">
-                                        <img style='padding: 0px;' src="assets/img/logo/sponsor/arcteryx.png"></img>
-                                    </a>
-                                </div>
+                        <div class="col-sm sponsorLogoBG">
+                            <div class="sponsor">
+                                <a href="https://www.bluewaterropes.com/">
+                                    <img style='padding: 0px;' src="assets/img/logo/sponsor/bluewater.png"></img>
+                                </a>
                             </div>
-                            <div class="col-sm sponsorLogoBG">
-                                <div class="sponsor">
-                                    <a href="http://www.blackdiamondequipment.com/en_US/homepage">
-                                        <img style='padding: 0px;' src="assets/img/logo/sponsor/black-diamond.png"></img>
-                                    </a>
-                                </div>
+                        </div>
+                        <div class="col-sm sponsorLogoBG">
+                            <div class="sponsor">
+                                <a href="https://evolvsports.com/">
+                                    <img src="assets/img/logo/sponsor/evolv.png"></img>
+                                </a>
                             </div>
-                            <div class="col-sm sponsorLogoBG">
-                                <div class="sponsor">
-                                    <a href="https://www.bluewaterropes.com/">
-                                        <img style='padding: 0px;' src="assets/img/logo/sponsor/bluewater.png"></img>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm sponsorLogoBG">
-                                <div class="sponsor">
-                                    <a href="https://evolvsports.com/">
-                                        <img src="assets/img/logo/sponsor/evolv.png"></img>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm sponsorLogoBG">
-                                <div class="sponsor">
-                                    <a href="https://frictionlabs.com/">
-                                        <img src="assets/img/logo/sponsor/friction-labs.png"></img>
-                                    </a>
-                                </div>
+                        </div>
+                        <div class="col-sm sponsorLogoBG">
+                            <div class="sponsor">
+                                <a href="https://frictionlabs.com/">
+                                    <img src="assets/img/logo/sponsor/friction-labs.png"></img>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div id="contact" class="container-fluid section contact">
-                <div class="sectionTitle "> Contact</div>
-
-                <div class="row contactSocial">
-                    <div class="col-sm-12">
-                        <a href="https://www.facebook.com/craig.demartino">
-                            <img src="assets/img/logo/socal/fb_logo.png"></img>
-                        </a>
-                        <a href="https://www.instagram.com/craigdem/">
-                            <img src="assets/img/logo/socal/insta_logo.png"></img>
-                        </a>
-                        <a href="https://twitter.com/demartinoclimb">
-                            <img src="assets/img/logo/socal/Twitter_logo.png"></img>
-                        </a>
-                    </div>
-                    <div class="col-sm-12">
-                        <label>“Life is 10% Circumstances and 90% my Reaction."</label>
-                    </div>
-                </div>
-            </div>
-            <div id="" class="container-fluid section fixed-footer">
-                &copy Craig DeMartino 2018 fakeemail@gemail.com
             </div>
 
+        </div>
+        <div id="contact" class="container-fluid section contact">
+            <div class="sectionTitle "> Contact</div>
 
-            <footer class="footer">
-                <div class="social-bar">
+            <div class="row contactSocial">
+                <div class="col-sm-12">
                     <a href="https://www.facebook.com/craig.demartino">
                         <img src="assets/img/logo/socal/fb_logo.png"></img>
                     </a>
@@ -212,27 +194,50 @@
                     <a href="https://twitter.com/demartinoclimb">
                         <img src="assets/img/logo/socal/Twitter_logo.png"></img>
                     </a>
-
                 </div>
+                <div class="col-sm-12">
+                    <label>“Life is 10% Circumstances and 90% my Reaction."</label>
+                </div>
+            </div>
+        </div>
+        <div id="" class="container-fluid section fixed-footer">
+            &copy Craig DeMartino 2018 fakeemail@gemail.com
+        </div>
 
-            </footer>
 
-            <!-- Bootstrap core JavaScript
+        <footer class="footer">
+            <div class="social-bar">
+                <a href="https://www.facebook.com/craig.demartino">
+                    <img src="assets/img/logo/socal/fb_logo.png"></img>
+                </a>
+                <a href="https://www.instagram.com/craigdem/">
+                    <img src="assets/img/logo/socal/insta_logo.png"></img>
+                </a>
+                <a href="https://twitter.com/demartinoclimb">
+                    <img src="assets/img/logo/socal/Twitter_logo.png"></img>
+                </a>
+
+            </div>
+
+        </footer>
+
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
-            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-                crossorigin="anonymous"></script>
-            <script src="src/third_party/bootstrap.min.js"></script>
-            <script src="src/home.js"></script>
-            <script type="text/javascript" src="src/third_party/instafeed.min.js"></script>
-            <script type="text/javascript" src="src/third_party/pure-swipe.min.js"></script>
-            <script type="text/javascript" src="src/slideshow.js"></script>
-            <script type="text/javascript" src="src/about.js"></script>
-            <script type="text/javascript" src="src/photo.js"></script>
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="src/third_party/ie10-viewport-bug-workaround.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="src/third_party/bootstrap.min.js"></script>
+        <script src="src/home.js"></script>
+        <script type="text/javascript" src="src/third_party/instafeed.min.js"></script>
+        <script type="text/javascript" src="src/third_party/pure-swipe.min.js"></script>
+        <script type="text/javascript" src="src/slideshow.js"></script>
+        <script type="text/javascript" src="src/about.js"></script>
+        <script type="text/javascript" src="src/photo.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="src/third_party/ie10-viewport-bug-workaround.js"></script>
+    </div>
 </body>
 
 </html>

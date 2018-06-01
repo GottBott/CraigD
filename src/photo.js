@@ -128,16 +128,16 @@ function showInstaSlides(n) {
 
 function openModal() {
     document.getElementById('fullInstaSlideShowModal').style.display = "block";
-    $("body").addClass("modal-open");
-    location.hash = "#photos";
-    let y = $(window).scrollTop();
-    $(window).scrollTop(y-100);
+    $(".wrapper").addClass("modal-open");
 
   }
   
   function closeModal() {
     document.getElementById('fullInstaSlideShowModal').style.display = "none";
-    $("body").removeClass("modal-open")
+    $(".wrapper").removeClass("modal-open")
+    location.hash = "#photos";
+    let y = $(window).scrollTop();
+    $(window).scrollTop(y-100);
   }
 
 

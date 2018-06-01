@@ -206,6 +206,7 @@ body {
     height: 100%;
     overflow: auto;
     background-color: black;
+    z-index: 20;
   }
   
   /* Modal Content */
@@ -259,9 +260,10 @@ body {
     z-index: 3;
 }
 
-body.modal-open {
+.modal-open {
     overflow: hidden;
     outline: none;
+    position: fixed;
 }
 
 .instaSlide{
