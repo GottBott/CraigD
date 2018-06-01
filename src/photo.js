@@ -63,6 +63,14 @@ function addDots(){
         let rawTime = $(this).find(".numbertext").html()
         $(this).find(".numbertext").html(formatDate(rawTime))
     })
+
+    $("#fullInstaSlideShow img, #fullInstaSlideShow p").on("swiped-left", function(){
+        plusInstaSlides(1)
+    })
+    
+    $("#fullInstaSlideShow img, #fullInstaSlideShow p").on("swiped-right", function(){
+        plusInstaSlides(-1)
+    })
 }
 
 function formatDate(d){
@@ -132,10 +140,4 @@ function openModal() {
     $("body").removeClass("modal-open")
   }
 
-  $("#fullInstaSlideShowModal").touchwipe({
-    wipeLeft: function() { plusInstaSlides(-1) },
-    wipeRight: function() { plusInstaSlides(1) },
-    min_move_x: 20,
-    min_move_y: 20,
-    preventDefaultEvents: true
-});
+

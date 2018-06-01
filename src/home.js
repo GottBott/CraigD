@@ -77,3 +77,7 @@ $(window).scroll(function () {
     $(".social-bar img").show(1000)
   }
 });
+
+document.addEventListener('swiped-left', function(e) {});
+
+document.addEventListener('swiped-right', function(e) {});

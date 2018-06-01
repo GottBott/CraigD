@@ -24,10 +24,11 @@ function showTitleSlides(n) {
     dots[titleSlideIndex - 1].className += " active";
 }
 
-$("#home").touchwipe({
-    wipeLeft: function()  { plusTitleSlides(-1) },
-    wipeRight: function() { plusTitleSlides(1) },
-    min_move_x: 20,
-    min_move_y: 20,
-    preventDefaultEvents: true
-});
+
+$(".mySlides").on("swiped-left", function(){
+    plusTitleSlides(1)
+})
+
+$(".mySlides").on("swiped-right", function(){
+    plusTitleSlides(-1)
+})
