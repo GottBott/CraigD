@@ -18,8 +18,14 @@
           text-align: right;
           margin-top: -80px;
           margin-right: 25px;
+          padding-bottom: 20px;
+
         }
   
+        .sectionTitle{
+            font-size: calc( 7vw);
+        }
+
         .mySlides{
           background-position: 60% bottom;
         }

@@ -179,6 +179,7 @@ body {
     font-size: calc(10px + 2vw);
     text-align: center;
     margin-bottom: 25px;
+    padding-top: 20px;
 }
 
 
@@ -285,18 +286,17 @@ body.modal-open {
 
 .sponsor{
     /* height: 114px; */
-    background-color: white;
     margin-top: 15px;
 }
 
 .sponsor img{
     max-width: 100%;
     padding: 10px;
-    background-color: white;
+    background-color: transparent;
 }
-.bgWhite{
-    background-color: white;
-    margin: 5px;
+.sponsorLogoBG{
+    display: flex;
+    align-items: center;
 }
 
 .sponsors label {
@@ -308,6 +308,12 @@ body.modal-open {
 
 .sponsors iframe{
     width:  100%;
+    /* margin-bottom: 20px; */
+}
+
+.sponsors label{
+    width:  100%;
+    margin-bottom: 20px;
 }
 .thumbSlide{
     cursor: pointer;
@@ -318,4 +324,44 @@ body.modal-open {
 /* 
 #thumbnailFeed{
     text-align: center;
+} */
+
+.afterFall img{
+    margin-bottom: 20px;
+}
+.fixed-footer{
+    text-align: right;
+    margin-right: 25px;
+    color: RGB(255,255,255,0.2);    
+}
+
+.contact label{
+    color: white;
+}
+
+.contactSocial{
+    text-align: center;
+}
+.contactSocial img{
+
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin: 5vw;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+/* .contact-social{
+    -webkit-animation: myfirst 1s 1; 
+    -webkit-animation-direction: normal; 
+    animation: myfirst .5s 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    height: 100px !important;
+} */
+
+/* .contact-social-size {
+    width: 80px !important;
+    height: 80px !important;
+    animation: mySecond .5s 1;
 } */

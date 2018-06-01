@@ -65,3 +65,15 @@ $(window).resize(function() {
     toggleBtn(w,h);
     centerInsta(w,h);
 });
+
+
+$(window).scroll(function () {
+    let y = $(window).scrollTop() + $(window).height();
+  let windowHeight = $("body").height()
+  if(y+($("#contact").height()) > windowHeight){
+    $(".social-bar img").hide(1000) 
+  }
+  else{
+    $(".social-bar img").show(1000)
+  }
+});
