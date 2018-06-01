@@ -23,3 +23,11 @@ function showTitleSlides(n) {
     slides[titleSlideIndex - 1].style.display = "block";
     dots[titleSlideIndex - 1].className += " active";
 }
+
+$("#home").touchwipe({
+    wipeLeft: function() { plusTitleSlidesa(-1) },
+    wipeRight: function() { plusTitleSlides(1) },
+    min_move_x: 20,
+    min_move_y: 20,
+    preventDefaultEvents: true
+});

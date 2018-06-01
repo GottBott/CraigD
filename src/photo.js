@@ -131,3 +131,11 @@ function openModal() {
     document.getElementById('fullInstaSlideShowModal').style.display = "none";
     $("body").removeClass("modal-open")
   }
+
+  $("#fullInstaSlideShowModal").touchwipe({
+    wipeLeft: function() { plusInstaSlides(-1) },
+    wipeRight: function() { plusInstaSlides(1) },
+    min_move_x: 20,
+    min_move_y: 20,
+    preventDefaultEvents: true
+});

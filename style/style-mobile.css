@@ -11,7 +11,7 @@
           margin-left: auto;
         }
         .craig-banner img {
-          max-width: 175px;
+          max-width: 160px;
           margin-top: 20px;
         }
         .dots{
@@ -36,7 +36,7 @@
             top: 55px;
         }
         .prev, .next {
-            top: 20%;
+            top: 70%;
         }
   }
   
@@ -44,6 +44,9 @@
         .craig-banner img {
           max-width: 150px;
           margin-top: 20px;
+        }
+        .prev, .next {
+            top: 80%;
         }
   
         .bg1{
