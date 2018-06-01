@@ -25,7 +25,7 @@ function showTitleSlides(n) {
 }
 
 $("#home").touchwipe({
-    wipeLeft: function() { plusTitleSlidesa(-1) },
+    wipeLeft: function()  { plusTitleSlides(-1) },
     wipeRight: function() { plusTitleSlides(1) },
     min_move_x: 20,
     min_move_y: 20,
