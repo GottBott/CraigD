@@ -37,6 +37,7 @@
         }
         .prev, .next {
             top: 70%;
+            display: none;
         }
   }
   
