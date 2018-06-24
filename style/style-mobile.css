@@ -12,7 +12,7 @@
         }
         .craig-banner img {
           max-width: 160px;
-          margin-top: 20px;
+          margin-top: 45px;
         }
         .dots{
           text-align: right;
@@ -20,6 +20,13 @@
           margin-right: 25px;
           padding-bottom: 20px;
 
+        }
+
+        .craig-name{
+          margin-top: 5px;
+      }
+        .bg-inverse {
+          padding-bottom: 15px;
         }
   
         .sectionTitle{
@@ -44,11 +51,14 @@
   @media only screen and (max-height: 400px) {
         .craig-banner img {
           max-width: 150px;
-          margin-top: 20px;
+          margin-top: 45px;
         }
         .prev, .next {
-            top: 80%;
+            top: 85%;
         }
+        .craig-name{
+          margin-top: 5px;
+      }
   
         .bg1{
           background-position: center 25%;

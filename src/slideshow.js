@@ -1,4 +1,16 @@
 var titleSlideIndex = 1;
+var playing = true
+
+
+
+function playSlideShow(){
+    setTimeout(() => {
+        if(playing){
+            plusTitleSlides(1)
+            playSlideShow()
+        }
+    }, 6000);    
+}
 
 function plusTitleSlides(n) {
     showTitleSlides(titleSlideIndex += n);
@@ -32,3 +44,5 @@ $(".mySlides").on("swiped-left", function(){
 $(".mySlides").on("swiped-right", function(){
     plusTitleSlides(-1)
 })
+
+playSlideShow()

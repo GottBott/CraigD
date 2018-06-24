@@ -11,6 +11,10 @@ body {
     margin-right: 10px
 
 }
+.navbar .navbar-toggler{
+    margin-top: 10px !important;
+}
+
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
     color:white !important;
@@ -20,11 +24,13 @@ body {
 .craig-banner img{
     border-radius: 25px;
     margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
+    
 }
 .craig-name{
     font-size: calc(20px + 2vw);
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .nav-bar-center{
@@ -64,6 +70,7 @@ body {
 
 .navbar-brand{
     padding-left: 6vw;
+    padding-right: 6vw;
     padding-bottom: 0px;
     padding-top: 0px;
 }

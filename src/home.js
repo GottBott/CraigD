@@ -4,7 +4,7 @@ function init(){
     let w = $(window).width()
     let h = $(window).height()
     bGImage(w,h);
-    toggleBtn(w,h);
+   // toggleBtn(w,h);
     instaFeed();
 
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
@@ -30,16 +30,16 @@ function bGImage(docWidth,docHeight){
 
 }
 
-function toggleBtn(docWidth,docHeight){
+// function toggleBtn(docWidth,docHeight){
 
-    let navHeight = $(".navbar").outerHeight();
-    let toggleBtnHeight = $(".navbar-toggler").outerHeight()
-    let mTop = 0
-    if(navHeight > toggleBtnHeight){
-        mTop += 0.5 * (navHeight - toggleBtnHeight)
-    }
-    $(".navbar-toggler").css("margin-top", mTop + "px");
-}
+//     let navHeight = $(".navbar").outerHeight();
+//     let toggleBtnHeight = $(".navbar-toggler").outerHeight()
+//     let mTop = 0
+//     if(navHeight > toggleBtnHeight){
+//         mTop += 0.5 * (navHeight - toggleBtnHeight)
+//     }
+//     $(".navbar-toggler").css("margin-top", mTop + "px");
+// }
 
 function centerInsta(docWidth,docHeight){
     let pWidth = $("#photos").width() +20;
@@ -62,7 +62,7 @@ $(window).resize(function() {
     let w = $(window).width()
     let h = $(window).height()
     bGImage(w,h);
-    toggleBtn(w,h);
+    //toggleBtn(w,h);
     centerInsta(w,h);
 });
 
