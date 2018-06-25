@@ -27,6 +27,7 @@ body {
     margin-top: 60px;
     
 }
+
 .craig-name{
     font-size: calc(20px + 2vw);
     margin-left: 10px;
@@ -99,11 +100,15 @@ body {
 }
 
 .mySlides {
-    background-position: center bottom;
+    background-position: center center;
     display: none;
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.bg4{
+    background-position: center -300px;
 }
 
 .slideshow-container {

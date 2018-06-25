@@ -34,7 +34,7 @@
         }
 
         .mySlides{
-          background-position: 60% bottom;
+          background-position: 60% bottom !important;
         }
         .bg3{
           background-position: 65% bottom !important;
@@ -70,7 +70,7 @@
           background-position: center 25%;
         }
         .bg4{
-          background-position: center 66%;
+          background-position: center 66% !important;
         }
         .close{
             top: 55px;

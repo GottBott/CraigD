@@ -9,7 +9,7 @@ function playSlideShow(){
             plusTitleSlides(1)
             playSlideShow()
         }
-    }, 6000);    
+    }, 12000);    
 }
 
 function plusTitleSlides(n) {
