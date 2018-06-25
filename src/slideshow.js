@@ -1,18 +1,19 @@
 var titleSlideIndex = 1;
-var playing = true
+var bgPlaying = true
 
 
 
-function playSlideShow(){
+function playSlideShow() {
     setTimeout(() => {
-        if(playing){
-            plusTitleSlides(1)
+        if (bgPlaying) {
+            showTitleSlides(titleSlideIndex += 1);
             playSlideShow()
         }
-    }, 12000);    
+    }, 12000);
 }
 
 function plusTitleSlides(n) {
+    bgPlaying = false
     showTitleSlides(titleSlideIndex += n);
 }
 
@@ -37,11 +38,11 @@ function showTitleSlides(n) {
 }
 
 
-$(".mySlides").on("swiped-left", function(){
+$(".mySlides").on("swiped-left", function () {
     plusTitleSlides(1)
 })
 
-$(".mySlides").on("swiped-right", function(){
+$(".mySlides").on("swiped-right", function () {
     plusTitleSlides(-1)
 })
 
