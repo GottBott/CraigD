@@ -133,12 +133,14 @@ function openModal() {
 
   }
   
-  function closeModal() {
+  function closeModal(scrollFlag) {
     document.getElementById('fullInstaSlideShowModal').style.display = "none";
     $(".wrapper").removeClass("modal-open")
-    location.hash = "#photos";
-    let y = $(window).scrollTop();
-    $(window).scrollTop(y-100);
+    if(!scrollFlag){
+        location.hash = "#photos";
+        let y = $(window).scrollTop();
+        $(window).scrollTop(y-100);
+    }
+    
   }
-
 

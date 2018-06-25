@@ -8,7 +8,7 @@ function init(){
     instaFeed();
 
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
-        closeModal()
+        closeModal(true)
         event.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
