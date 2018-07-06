@@ -1,6 +1,7 @@
 
 var instaSlideIndex = 0;
 
+// TODO discuss tags and change instagram 
 let options = {
     //get: 'tagged',
     //tagName: 'iceclimbing',
