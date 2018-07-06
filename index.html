@@ -17,38 +17,38 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
-   
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top ">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="#/home">
-                    <div class="craig-name">Craig ​DeMartino </div>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#photos">Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#media">Media</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="wrapper">
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#/home">
+                <div class="craig-name">Craig ​DeMartino </div>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#photos">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#media">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
         <div id="home">
             <div class="slideshow-container">
 
@@ -182,6 +182,23 @@
         </div>
         <div id="contact" class="container-fluid section contact">
             <div class="sectionTitle "> Contact</div>
+
+            <div class="center-forms">
+                <form action="https://formspree.io/epicvantrip@gmail.com" method="POST">
+                    <div class="center-input-form">
+                        <input class="input-form " type="email" name="email" placeholder=" Email">
+
+                    </div>
+                    <div class="center-input-form">
+                        <input class="input-form" type="text" name="_subject" placeholder=" Subject" />
+                    </div>
+                    <div class=" center-input-form">
+                        <textarea class="input-form" name="message" placeholder=" Message"></textarea>
+                        <input type="hidden" name="_next" value="http://localhost/craigD/#contact" />
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
 
             <div class="row contactSocial">
                 <div class="col-sm-12">
