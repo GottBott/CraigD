@@ -299,18 +299,19 @@ body {
 }
 
 .sponsor{
-    /* height: 114px; */
     margin-top: 15px;
 }
 
 .sponsor img{
     max-width: 100%;
-    padding: 10px;
     background-color: transparent;
 }
 .sponsorLogoBG{
     display: flex;
     align-items: center;
+    max-width: 150px;
+    margin: auto;
+
 }
 
 .sponsors label {
@@ -322,7 +323,6 @@ body {
 
 .sponsors iframe{
     width:  100%;
-    /* margin-bottom: 20px; */
 }
 
 .sponsors label{
@@ -334,11 +334,8 @@ body {
 }
 .thumbSlide img{
     margin: 5px;
+    border-radius: 7px;
 }
-/* 
-#thumbnailFeed{
-    text-align: center;
-} */
 
 .afterFall img{
     margin-bottom: 20px;
@@ -379,12 +376,12 @@ body {
 
 }
 .center-forms  textarea{
-    min-height: 200px;
+    min-height: 400px;
     background-color: #dfdede;
 }
 .center-forms input{
     background-color: #dfdede;
-    min-height: 25px;
+    min-height: 40px;
 }
 .center-forms button{
     width: 75px;
@@ -393,7 +390,17 @@ body {
     float: right;
 }
 
+.contact-img{
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 500px;
+} 
+
 .center-forms{
     margin-bottom: 80px;
 }
 
+.contact-img-div{
+    text-align: center;
+    margin-bottom: 10px;
+}
