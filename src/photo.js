@@ -17,9 +17,9 @@ let thumbTemplate = `<a class="thumbSlide"><img src="{{image}}" /></a>`
 let fullTemplate = `<div class="instaSlide fade">
 <div class="numbertext" >{{model.created_time}}</div>
 <img src={{image}} style="width:90%; margin:auto; max-width:644px;">
-<div class="caption-container">
+<!--<div class="caption-container">
 <p>{{caption}}</p>
-</div>
+</div> -->
 </div>`
 
 function instaFeed(limit){
@@ -32,6 +32,7 @@ function instaFeed(limit){
     thumbnailFeed.run();
 
     let fullOptions = jQuery.extend({}, options)
+    fullOptions.limit = limit ? limit : 16
     fullOptions.template = fullTemplate
     fullOptions.resolution = 'standard_resolution'
     fullOptions.target = 'fullInstaSlideShow'
