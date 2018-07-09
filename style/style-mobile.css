@@ -79,3 +79,10 @@
        
   }
   
+
+
+  @media only screen and (max-width: 1200px) {
+    .bg4{
+      background-position: center -150px;
+    }
+  }

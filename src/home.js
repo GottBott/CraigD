@@ -5,7 +5,13 @@ function init(){
     let h = $(window).height()
     bGImage(w,h);
    // toggleBtn(w,h);
-    instaFeed();
+   if(w < 813){
+    instaFeed(12);
+   }
+   else{
+    instaFeed(16);
+   }
+    
 
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
         closeModal(true)
@@ -17,6 +23,23 @@ function init(){
           window.location.hash = hash;
         });
     });
+
+    // $("video").click(function(e){
+
+    //     // handle click if not Firefox (Firefox supports this feature natively)
+    //     if (typeof InstallTrigger === 'undefined') {
+    
+    //         // get click position 
+    //         var clickY = (e.pageY - $(this).offset().top);
+    //         var height = parseFloat( $(this).height() );
+    
+    //         // avoids interference with controls
+    //         if (clickY > 0.82*height) return;
+    
+    //         // toggles play / pause
+    //         this.paused ? this.play() : this.pause();
+    //     }
+    // });
 }
 
 
@@ -67,8 +90,10 @@ $(window).resize(function() {
 });
 
 
+
+
 $(window).scroll(function () {
-    let y = $(window).scrollTop() + $(window).height();
+    let y = $(window).scrollTop() + $(window).height() - 500;
   let windowHeight = $("body").height()
   if(y+($("#contact").height()) > windowHeight){
     $(".social-bar img").hide(1000) 

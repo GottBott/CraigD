@@ -8,8 +8,7 @@ let options = {
     clientId: '111680786b694bc1b47154dba7ffbfbe',
     accessToken: '3522981484.1116807.ac98862469174adab8a7741c5c29a2fa',
     userId:'3522981484',
-    get: 'user',
-    limit: '12'
+    get: 'user'
 }
 
 
@@ -23,8 +22,9 @@ let fullTemplate = `<div class="instaSlide fade">
 </div>
 </div>`
 
-function instaFeed(){
+function instaFeed(limit){
     let thumbOptions = jQuery.extend({}, options)
+    thumbOptions.limit = limit ? limit : 16
     thumbOptions.target = 'thumbnailFeed'
     thumbOptions.template = thumbTemplate
     thumbOptions.after = function(){ numberSlides()} 
