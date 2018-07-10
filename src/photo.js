@@ -16,7 +16,7 @@ let thumbTemplate = `<a class="thumbSlide"><img src="{{image}}" /></a>`
 
 let fullTemplate = `<div class="instaSlide fade">
 <div class="numbertext" >{{model.created_time}}</div>
-<img src={{image}} style="width:90%; margin:auto; max-width:644px;">
+<img src={{image}} style="margin: auto; max-width: 90%; max-height: 75vh;">
 <!--<div class="caption-container">
 <p>{{caption}}</p>
 </div> -->
