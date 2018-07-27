@@ -3,12 +3,13 @@ var instaSlideIndex = 0;
 
 // TODO discuss tags and change instagram 
 let options = {
-    //get: 'tagged',
-    //tagName: 'iceclimbing',
-    clientId: '111680786b694bc1b47154dba7ffbfbe',
-    accessToken: '3522981484.1116807.ac98862469174adab8a7741c5c29a2fa',
-    userId:'3522981484',
-    get: 'user'
+    clientId: 'bed1cc4277c84daca3d28897c78c29a5',
+    accessToken: '253757049.bed1cc4.2992b18b8a814342a4ff03d8166b6d56',
+    get: 'user',
+    userId:'253757049',
+    // get:'tagged',
+    // tagName:'arcteryx',
+
 }
 
 
