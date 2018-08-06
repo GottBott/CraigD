@@ -1,5 +1,5 @@
 
- jQuery.getJSON('../CraigD/assets/content/about.json',function( data ) {
+ jQuery.getJSON('../craigdemartino.com/content/about.json',function( data ) {
     $("#about .sectionTitle").html(data.title)
 
     $.each(data.sections, function( index, value ) {
