@@ -25,7 +25,7 @@ function showTitleSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { titleSlideIndex = 1 }
+    if (n > 4) { titleSlideIndex = 1 }
     if (n < 1) { titleSlideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
