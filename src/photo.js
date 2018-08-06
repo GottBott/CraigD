@@ -1,6 +1,7 @@
 
 var instaSlideIndex = 0;
-
+var instaFeedRunning = false;
+var fullFeed = null;
 // TODO discuss tags and change instagram 
 let options = {
     clientId: 'bed1cc4277c84daca3d28897c78c29a5',
@@ -24,6 +25,7 @@ let fullTemplate = `<div class="instaSlide fade">
 </div>`
 
 function instaFeed(limit){
+    limit = limit
     let thumbOptions = jQuery.extend({}, options)
     thumbOptions.limit = limit ? limit : 16
     thumbOptions.target = 'thumbnailFeed'
@@ -37,9 +39,8 @@ function instaFeed(limit){
     fullOptions.template = fullTemplate
     fullOptions.resolution = 'standard_resolution'
     fullOptions.target = 'fullInstaSlideShow'
-    fullOptions.after = function(){ addDots()}
-    var fullFeed = new Instafeed(fullOptions);
-    fullFeed.run();
+    fullOptions.after = function(){ addDots();openModal();currentInstaSlide(instaSlideIndex);}
+    fullFeed = new Instafeed(fullOptions);
 }
 
 
@@ -52,8 +53,16 @@ function numberSlides(){
 
     $(".thumbSlide").each(function( index ) {
         $(this).click(function(){
-            openModal();
-            currentInstaSlide(index)
+            if(!instaFeedRunning){
+                instaFeedRunning = true;
+                instaSlideIndex = index
+                fullFeed.run()
+            }
+            else{
+                openModal();
+                currentInstaSlide(index)
+            }
+            
         })
        
     })
@@ -130,6 +139,7 @@ function showInstaSlides(n) {
 
 
 function openModal() {
+
     document.getElementById('fullInstaSlideShowModal').style.display = "block";
     $(".wrapper").addClass("modal-open");
     setTimeout(function(){ $(".nav-link").removeClass("active") }, 100);

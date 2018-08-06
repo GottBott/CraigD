@@ -11,6 +11,8 @@ function init(){
    else{
     instaFeed(16);
    }
+
+
     
 
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
@@ -46,6 +48,29 @@ function init(){
 // set the correct bg image based on screen size
 // Put the banner in the correct place
 function bGImage(docWidth,docHeight){
+
+    let bgHtml =  
+    `
+    <div class="mySlides fade bg bg2" style="background-image:url('assets/img/craig_large2.jpg');">
+                    <div class="craig-banner">
+                        <img data-src="assets/img/banner.jpg"></img>
+                    </div>
+                </div>
+
+                <div class="mySlides fade bg bg3" style="background-image:url('assets/img/craig_large3.jpg')">
+                    <div class="craig-banner">
+                        <img data-src="assets/img/banner.jpg"></img>
+                    </div>
+                </div>
+
+                <div class="mySlides fade bg bg4" style="background-image:url('assets/img/headshot.png'); background-color: black; ">
+                    <div class="craig-banner">
+                        <img data-src="assets/img/banner.jpg"></img>
+                    </div>
+                </div>
+
+    `;
+    $(".slideshow-container").append(bgHtml);
 
      showTitleSlides(titleSlideIndex);
     let navHeight = $(".navbar").outerHeight();
