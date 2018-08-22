@@ -1,2 +1,2 @@
-cd /home/gig2pteriagg/public_html/craigdemartino.com
+cd public_html/craigdemartino.com
 git pull
