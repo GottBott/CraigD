@@ -1,4 +1,4 @@
 # CraigD
-website for Craig
+Website for Craig
 
-https://www.craigdemartino.com/#home
+https://craigdemartino.com
