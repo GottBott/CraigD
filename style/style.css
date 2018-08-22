@@ -381,17 +381,22 @@ body {
 }
 .center-forms  textarea{
     min-height: 400px;
-    background-color: #dfdede;
-}
+    border-radius: 4px; 
+    background-color: transparent}
+
 .center-forms input{
-    background-color: #dfdede;
+    background-color: transparent;
+    border-radius: 4px; 
     min-height: 40px;
 }
 .center-forms button{
     width: 75px;
     cursor: pointer;
-    background-color: #dfdede;
+    background-color: transparent;
+    /*background-color: #8e8e8e;*/
+    border-radius: 4px; 
     float: right;
+    color: white;
 }
 
 .contact-img{
