@@ -435,3 +435,7 @@ body {
     max-width: 1280px;
 }
 
+.max-content-width{
+    max-width: 1300px;
+    margin: auto;
+}
