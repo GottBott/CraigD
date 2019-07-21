@@ -449,3 +449,31 @@ body {
     max-width: 1300px;
     margin: auto;
 }
+
+.no-webp .bg1 {
+    background-image: url("../assets/img/craig_large1.jpg");
+}
+.webp .bg1{
+    background-image: url("../assets/img/craig_large1.webp");
+}
+
+.no-webp .bg2 {
+    background-image: url("../assets/img/craig_large2.jpg");
+}
+.webp .bg2{
+    background-image: url("../assets/img/craig_large2.webp");
+}
+
+.no-webp .bg3 {
+    background-image: url("../assets/img/craig_large3.jpg");
+}
+.webp .bg3{
+    background-image: url("../assets/img/craig_large3.webp");
+}
+
+.no-webp .bg4 {
+    background-image: url("../assets/img/headshot.png");
+}
+.webp .bg4{
+    background-image: url("../assets/img/headshot.webp");
+}

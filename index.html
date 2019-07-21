@@ -19,8 +19,9 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top ">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="mx-auto order-0">
@@ -52,25 +53,40 @@
         <div id="home">
             <div class="slideshow-container">
 
-                <div class="mySlides fade bg bg1" style="background-image:url('assets/img/craig_large1.jpg');">
+                <div class="mySlides fade bg bg1">
                     <div class="craig-banner">
-                        <img alt="logo banner" class="" src="assets/img/banner.jpg"></img>
+                        <picture>
+                            <source srcset="assets/img/banner.webp" type="image/webp">
+                            <source srcset="assets/img/banner.jpg" type="image/jpeg">
+                            <img src="assets/img/banner.jpg" alt="logo banner">
+                        </picture>
+                        <!-- <img alt="logo banner" class="" src="assets/img/banner.jpg"></img> -->
                     </div>
                 </div>
 
-                <div class="mySlides fade bg bg2" style="background-image:url('assets/img/craig_large2.jpg');">
+                <div class="mySlides fade bg bg2">
                     <div class="craig-banner">
-                        <img alt="logo banner" class="" src="assets/img/banner.jpg"></img>
+                        <picture>
+                            <source srcset="assets/img/banner.webp" type="image/webp">
+                            <source srcset="assets/img/banner.jpg" type="image/jpeg">
+                            <img src="assets/img/banner.jpg" alt="logo banner">
+                        </picture>
+                        <!-- <img alt="logo banner" class="" src="assets/img/banner.jpg"></img> -->
                     </div>
                 </div>
 
-                <div class="mySlides fade bg bg3" style="background-image:url('assets/img/craig_large3.jpg')">
+                <div class="mySlides fade bg bg3">
                     <div class="craig-banner">
-                        <img alt="logo banner" class="" src="assets/img/banner.jpg"></img>
+                        <picture>
+                            <source srcset="assets/img/banner.webp" type="image/webp">
+                            <source srcset="assets/img/banner.jpg" type="image/jpeg">
+                            <img src="assets/img/banner.jpg" alt="logo banner">
+                        </picture>
+                        <!-- <img alt="logo banner" class="" src="assets/img/banner.jpg"></img> -->
                     </div>
                 </div>
 
-                <div class="mySlides fade bg bg4" style="background-image:url('assets/img/headshot.png'); background-color: black; ">
+                <div class="mySlides fade bg bg4" style="background-color: black; ">
                     <div class="craig-banner">
                         <img alt="logo banner" class="" src="assets/img/banner.jpg"></img>
                     </div>
@@ -125,7 +141,8 @@
                 <div class="sponsors">
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
-                            <a href="https://www.amazon.com/After-Fall-Climbers-Facing-Finding/dp/0825442656" class="afterFall">
+                            <a href="https://www.amazon.com/After-Fall-Climbers-Facing-Finding/dp/0825442656"
+                                class="afterFall">
                                 <img alt="After the fall book" class="" src="assets/img/ATF-book.jpg"></img>
                             </a>
                         </div>
@@ -138,13 +155,17 @@
                             <div class="row">
                                 <!-- <video  preload="none" poster='assets/img/video/gimp.jpg' controls="true" width='100%' height='100%' src='assets/img/video/gimp.mp4' type='video/mp4'></video> -->
                                 <div class="col-lg-12 col-md-6 frame">
-                                    <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
-                                        webkitallowfullscreen="webkitallowfullscreen" src="https://player.vimeo.com/video/51767176"></iframe>
+                                    <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                                        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                        webkitallowfullscreen="webkitallowfullscreen"
+                                        src="https://player.vimeo.com/video/51767176"></iframe>
                                     <label>Gimp Monkeys</label>
                                 </div>
                                 <div class="col-lg-12 col-md-6 frame">
-                                    <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
-                                        webkitallowfullscreen="webkitallowfullscreen" src="https://player.vimeo.com/video/254133852"></iframe>
+                                    <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                                        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                        webkitallowfullscreen="webkitallowfullscreen"
+                                        src="https://player.vimeo.com/video/254133852"></iframe>
 
                                     <label>Craig's Reaction</label>
                                 </div>
@@ -152,7 +173,7 @@
 
 
                         </div>
-                      
+
                     </div>
 
                 </div>
@@ -164,7 +185,12 @@
 
             <div class="row">
                 <div class="col-sm-12 col-md-6 contact-img-div ">
-                    <img alt="" class=" contact-img" src="assets/img/contact.jpg"></img>
+                    <picture >
+                        <source class="contact-img" srcset="assets/img/contact.webp" type="image/webp">
+                        <source class="contact-img" srcset="assets/img/contact.jpg" type="image/jpeg">
+                        <img class="contact-img" src="assets/img/contact.jpg" alt="contact me image">
+                    </picture>
+                    <!-- <img alt="" class=" contact-img" src="assets/img/contact.jpg"></img> -->
 
                 </div>
                 <div class="col-sm-12 col-md-6 ">
@@ -220,7 +246,8 @@
                     <div class="sponsor">
 
                         <a href="http://www.blackdiamondequipment.com/en_US/homepage">
-                            <img alt="black diamond logo" class="" src="assets/img/logo/sponsor/black-diamond.png"></img>
+                            <img alt="black diamond logo" class=""
+                                src="assets/img/logo/sponsor/black-diamond.png"></img>
                         </a>
                     </div>
                 </div>
@@ -244,7 +271,8 @@
                     <div class="sponsor">
 
                         <a href="https://frictionlabs.com/">
-                            <img alt="friction labs logo" class="" src="assets/img/logo/sponsor/friction-labs.png"></img>
+                            <img alt="friction labs logo" class=""
+                                src="assets/img/logo/sponsor/friction-labs.png"></img>
                         </a>
                     </div>
                 </div>
@@ -294,12 +322,14 @@
         <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
         <!-- <script src="src/third_party/jquery.lazyloadxt.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
             crossorigin="anonymous"></script>
         <script src="src/third_party/bootstrap.min.js"></script>
         <script src="src/home.js"></script>
         <script type="text/javascript" src="src/third_party/instafeed.min.js"></script>
         <script type="text/javascript" src="src/third_party/pure-swipe.min.js"></script>
+        <script type="text/javascript" src="src/third_party/webp.js"></script>
         <script type="text/javascript" src="src/slideshow.js"></script>
         <script type="text/javascript" src="src/about.js"></script>
         <script type="text/javascript" src="src/photo.js"></script>
