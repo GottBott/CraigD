@@ -339,8 +339,13 @@ body {
 .thumbSlide img{
     margin: 5px;
     border-radius: 7px;
+    width: 20%;
+    object-fit: cover;
 }
 
+.photo-center{
+    text-align: center;
+}
 .afterFall img{
     max-width: 100%;
     max-height: 400px;

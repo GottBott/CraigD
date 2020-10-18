@@ -5,12 +5,12 @@ function init(){
     let h = $(window).height()
     bGImage(w,h);
    // toggleBtn(w,h);
-   if(w < 813){
-    instaFeed(12);
-   }
-   else{
-    instaFeed(16);
-   }
+  //  if(w < 813){
+  //   instaFeed(12);
+  //  }
+  //  else{
+  //   instaFeed(16);
+  //  }
 
    
     
